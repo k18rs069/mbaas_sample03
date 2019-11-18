@@ -56,7 +56,7 @@
         $("#display").addClass("bg-success");
         $("#display").html("delete success");
       })
-      .then(function(error){
+      .catch(function(error){
         $("#display").removeClass();
         $("#display").addClass("bg-warning");
         $("#display").html("delete fail:" + JSON.stringfy(error));
@@ -74,7 +74,7 @@
         $("#display").addClass("bg-success");
         $("#display").html("update success");
       })
-      .then(function(error){
+      .catch(function(error){
         $("#display").removeClass();
         $("#display").addClass("bg-warning");
         $("#display").html("update fail:" + JSON.stringfy(error));
